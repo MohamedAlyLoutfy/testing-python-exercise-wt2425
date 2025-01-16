@@ -1,0 +1,10 @@
+# Tox configuration file
+[tox]
+envlist = py39
+
+[testenv]
+description = Run tests using both unittest and pytest
+deps = -rrequirements.txt  
+commands = 
+    coverage run -m unittest discover  
+    pytest                             
